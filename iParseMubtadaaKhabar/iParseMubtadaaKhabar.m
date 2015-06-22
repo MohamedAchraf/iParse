@@ -33,7 +33,7 @@ m = size(x, 1);
 
 %% =================== Training NN ===================
 fprintf('[INFO]\tTraining NN...\n');
-iterations = 20:20:100;%[1:9 10:5:45 50:10:90 100:100:500 600:200:1000];
+iterations = [20:20:1000];
 lambdas =  [0.001 0.003 0.01 0.03 0.1 0.3 1] ;
 accuracyList = [];
 totalAccuarcyList = zeros(1,length(iterations));
@@ -154,7 +154,7 @@ fprintf('\t\tPress Enter to continue..\n');
 pause;
 %% ==================== Plotting Learning Curves II =======================
 fprintf('[INFO]\tLearning Curves II : [Train_Set, CV_Set] = Error(Iterations)...\n');
-Iterations = 20:20:1000; %[1:9 10:5:45 50:10:90 100:100:500 600:200:1000 ];
+Iterations = 20:20:1000; 
 
 total_cost_cv = [];
 total_cost_dev = [];
