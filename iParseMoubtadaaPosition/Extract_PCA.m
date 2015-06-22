@@ -1,6 +1,6 @@
 function [ Z eigenvalue Partial_retained_variance retained_variance ] = Extract_PCA( XY, K )
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+
+
 [m n] = size(XY);
 X = XY(:,1:n-1);
 Y = XY(:,n);
