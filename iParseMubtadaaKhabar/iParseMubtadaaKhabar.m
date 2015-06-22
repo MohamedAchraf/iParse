@@ -3,7 +3,6 @@ clear ; close all; clc;
 fprintf('[INFO]\tInitialization...\n');
 set(0, 'defaultFigureWindowStyle','Docked');
 warning('off','all');
-addpath('D:\ML\iparse');
 %% ============ Setup NN parameters =================
 fprintf('[INFO]\tSetup NN parameters...\n');
 input_layer_size  = 12;   % 1x12 Input
